@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+:root {
+  --primary-light: hsl(193, 38%, 86%);
+  --primary-green: hsl(150, 100%, 66%);
+  --secondary-grayish-blue: hsl(217, 19%, 38%);
+  --seconday-dark-grayish-blue: hsl(217, 19%, 24%);
+  --secondary-dark-blue: hsl(218, 23%, 16%);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Manrope', sans-serif;
+}
+
+body {
+  background-color: var(--secondary-dark-blue);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.box {
+  width: 500px;
+  height: 350px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--seconday-dark-grayish-blue);
+  padding: 30px;
+  margin-bottom: 100px;
+  border-radius: 15px;
+
+  h3 {
+    font-size: 12px;
+    color: var(--primary-green);
+    margin-bottom: 30px;
+    letter-spacing: 0.2rem;
+  }
+
+  h1 {
+    font-size: 26px;
+    color: var(--primary-light);
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  svg#mobile {
+    display: none;
+  }
+
+  svg#desktop {
+    margin-top: 10px;
+  }
+}
+
+svg#dice {
+  position: absolute;
+  left: 225px;
+  bottom: -25px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  padding: 15px;
+  background-color: var(--primary-green);
+  box-sizing: content-box;
+  cursor: pointer;
+
+  path {
+    fill: var(--secondary-dark-blue);
+  }
+}
+
+svg#dice:hover {
+  box-shadow: var(--primary-green) 0px 5px 40px 1px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: var(--primary-light);
+}
+.attribution a {
+  color: var(--primary-green);
+}
+
+@media only screen and (max-width: 550px) {
+  .box {
+    width: 90%;
+    height: 50%;
+    margin-bottom: 50px;
+
+    h1 {
+      font-size: 22px;
+    }
+  }
+
+  svg#dice {
+    left: calc(50% - 20px);
+    bottom: -30px;
+  }
+
+  .box svg#desktop {
+    display: none;
+  }
+
+  .box svg#mobile {
+    display: block;
+  }
+}
