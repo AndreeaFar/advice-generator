@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
     <link
       rel="icon"
       type="image/png"
@@ -15,11 +16,8 @@
   </head>
   <body>
     <div class="box">
-      <h3>ADVICE #117</h3>
-      <h1>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ut ab
-        suscipit quo, quam eum!
-      </h1>
+      <h3 class="advice-number"></h3>
+      <h1 class="quotes"></h1>
       <svg
         id="desktop"
         width="444"
@@ -47,11 +45,11 @@
         </g>
       </svg>
 
-      <svg id="dice" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
-        <path
-          d="M20 0H4a4.005 4.005 0 0 0-4 4v16a4.005 4.005 0 0 0 4 4h16a4.005 4.005 0 0 0 4-4V4a4.005 4.005 0 0 0-4-4ZM7.5 18a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Z"
-          fill="#202733" />
-      </svg>
+      <div class="button-section">
+        <div class="dice-img"></div>
+      </div>
+
+      <div class="spinner"></div>
     </div>
 
     <div class="attribution">
