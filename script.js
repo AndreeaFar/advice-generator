@@ -6,6 +6,7 @@ const apiUrl = 'https://api.adviceslip.com/advice';
 
 async function requestData() {
   try {
+    adviceText.style.visibility = 'hidden';
     spinner.style.display = 'block';
 
     const response = await fetch(apiUrl);
@@ -26,6 +27,7 @@ async function requestData() {
 function updateAdvice(slipId, advice) {
   adviceNumber.textContent = `Advice #${slipId}`;
   adviceText.textContent = advice;
+  adviceText.style.visibility = 'visible';
 }
 // Event listener
 diceBtn.addEventListener('click', requestData);

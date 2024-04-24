@@ -36,7 +36,12 @@ body {
   padding: 1.875rem;
   margin-bottom: 6.25rem;
   border-radius: 0.9375rem;
-
+  .quote-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
   h3 {
     font-size: 16px;
     color: var(--primary-green);
@@ -86,9 +91,8 @@ body {
 
 .spinner {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 20%;
+  left: 45%;
   width: 50px;
   height: 50px;
   border: 5px solid var(--primary-light);
